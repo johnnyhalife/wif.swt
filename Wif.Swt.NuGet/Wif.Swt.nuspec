@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Wif.Swt</id>
+    <version>0.0.1.0</version>
+    <title>Simple Web Token Support for Windows Identity Foundation</title>
+    <authors>Zulfiqar Ahmed, Dominick Baier, Julian Dominguez, Daniel Cazzulino, kzu, Clarius, Johnny Halife, Juan Pablo Garcia, Mauro Krikorian, Mariano Converti, Damian Martinez, Nico Bello, and Ezequiel Morito</authors>
+    <owners>Zulfiqar Ahmed, Dominick Baier, Julian Dominguez, Daniel Cazzulino, kzu, Clarius, Johnny Halife, Juan Pablo Garcia, Mauro Krikorian, Mariano Converti, Damian Martinez, Nico Bello, and Ezequiel Morito</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      (Binary Version of the NetFx.)
+      
+      Adds the required source code and Web.config changes to support SWT tokens.
+
+      Just configure SWT token format in Azure ACS/STS, and add your SwtSigningKey value to the Web.config!
+
+      Requires: http://kzu.to/wifruntime and http://kzu.to/wif_sdk
+    </description>
+    <language>en-US</language>
+    <tags>swt wif oauth wrap acs azure</tags>
+  </metadata>
+</package>
