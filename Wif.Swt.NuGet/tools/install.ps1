@@ -30,7 +30,5 @@ param($installPath, $toolsPath, $package, $project)
 	}
 	else
 	{
-		write-warning "Web.config file not found! The project must be a web application."
-		uninstall-package Wif.Swt
 		return
 	}
