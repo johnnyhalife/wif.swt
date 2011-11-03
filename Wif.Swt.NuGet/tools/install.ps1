@@ -24,6 +24,8 @@ Import-Module (Join-Path $toolsPath forms.psm1)
 
 	$removeAddedKey = 0
 	$removeAddedTrustedIssuer = 0
+	$removeAddedAudience = 0
+	$removeAddedConfigSection = 0
 	
 	# Set the issuer registry
 	$web = $project.ProjectItems | Where-Object { $_.Name -eq "Web.config" };
@@ -58,6 +60,15 @@ Import-Module (Join-Path $toolsPath forms.psm1)
 			if ($key.value -ne "[yourrealm]")
 			{
 				$removeAddedAudience = 1
+			}
+		}
+		
+		# Check for previous configsections
+		foreach ($key in $xml.SelectNodes("configuration/configSections/section"))
+		{
+			if ($key.name -eq "microsoft.identityModel")
+			{
+				$removeAddedConfigSection++
 			}
 		}
 		
@@ -102,6 +113,12 @@ Import-Module (Join-Path $toolsPath forms.psm1)
 			}
 			
 			$xml.save($web.FileNames(1))
+		}
+		
+		if ($removeAddedConfigSection -ge 1)
+		{
+			$configSection = $xml.SelectSingleNode("configuration/configSections/section")
+			$xml.SelectSingleNode("configuration/configSections").RemoveChild($configSection)
 		}
 	}
 	
