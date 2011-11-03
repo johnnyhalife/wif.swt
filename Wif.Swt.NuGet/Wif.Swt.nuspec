@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Wif.Swt</id>
-    <version>0.0.1.2</version>
+    <version>0.0.1.3</version>
     <title>Simple Web Token Support for Windows Identity Foundation</title>
     <authors>Zulfiqar Ahmed, Dominick Baier, Julian Dominguez, Daniel Cazzulino, kzu, Clarius, Johnny Halife, Juan Pablo Garcia, Mauro Krikorian, Mariano Converti, Damian Martinez, Nico Bello, and Ezequiel Morito</authors>
     <owners>Zulfiqar Ahmed, Dominick Baier, Julian Dominguez, Daniel Cazzulino, kzu, Clarius, Johnny Halife, Juan Pablo Garcia, Mauro Krikorian, Mariano Converti, Damian Martinez, Nico Bello, and Ezequiel Morito</owners>
