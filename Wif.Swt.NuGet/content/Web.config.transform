@@ -16,7 +16,7 @@
       </audienceUris>
       <issuerNameRegistry type="Microsoft.IdentityModel.Swt.SwtIssuerNameRegistry, Wif.Swt">
         <trustedIssuers>
-          <add name="https://[youracsnamespace].accesscontrol.windows.net/" />
+          <add name="https://[youracsnamespace].accesscontrol.windows.net/" thumbprint=""/>
         </trustedIssuers>
       </issuerNameRegistry>
       <securityTokenHandlers>
