@@ -52,6 +52,9 @@
     <None Include="content\Web.config.transform">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="tools\forms.psm1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Wif.Swt.nuspec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

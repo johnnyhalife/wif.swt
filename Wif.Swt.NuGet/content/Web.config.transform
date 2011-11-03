@@ -8,6 +8,14 @@
   </system.web>
   <microsoft.identityModel>
     <service saveBootstrapTokens="true">
+      <audienceUris>
+        <add value="[yourrealm]" />
+      </audienceUris>
+      <issuerNameRegistry type="Microsoft.IdentityModel.Swt.SwtIssuerNameRegistry, Wif.Swt">
+        <trustedIssuers>
+          <add name="https://[youracsnamespace].accesscontrol.windows.net/" />
+        </trustedIssuers>
+      </issuerNameRegistry>
       <securityTokenHandlers>
         <add type="Microsoft.IdentityModel.Swt.SwtSecurityTokenHandler, Wif.Swt" />
       </securityTokenHandlers>
@@ -15,3 +23,4 @@
     </service>
   </microsoft.identityModel>
 </configuration>
+  
