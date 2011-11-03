@@ -57,6 +57,7 @@
     </None>
     <None Include="Wif.Swt.nuspec">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </None>
     <None Include="tools\install.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
